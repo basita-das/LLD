@@ -17,6 +17,7 @@ public:
     virtual ~FileSystemVisitor() = default;
 
     // how to visit/treat each type of file based on the function
+    // 3 diff types of constructors for 3 diff types of files
     virtual void visit(TextFile *file) = 0;
     virtual void visit(ImageFile *file) = 0;
     virtual void visit(VideoFile *file) = 0;
